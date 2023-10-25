@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realtime Node Socket.io Chat App</title>
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>   
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="chat.png" alt="" />
+      <h1>Welcome to Chat App</h1>
+    </nav>
+        <div class="container">
+          <!-- <div class="message left">yo:hii</div>
+          <div class="message right">rohan:yes how you do</div> -->
+        </div>
+    <div class="send">
+      <form action="#" id="send-container">
+        <input type="text" id="messageInp" name="messageInp" placeholder=" Enter your message" />
+        <button class="btn" type="submit">Send <i class='fa fa-send' style='color: blue'></i>  </button>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+      integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/client.js"></script>
+
+  </body>
+</html>

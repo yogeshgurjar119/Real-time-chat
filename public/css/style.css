@@ -1,0 +1,101 @@
+.logo {
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(27, 7, 182));
+}
+
+h1{
+  margin-top: 12px;
+  font-size: 30px;
+  font-family: 'Segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.container {
+  max-width: 955px;
+  border: 2px solid black;
+  border-radius: 13px;
+  padding: 33px;
+  overflow-y: auto;
+  margin-bottom: 23px;
+  margin: auto;
+  height: 60vh;
+} 
+
+.message {
+  background-color: rgb(143, 190, 203);
+  width: 24%;
+  padding: 10px;
+  margin: 17px 12px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+
+.left {
+  float: left;
+  clear: both;
+}
+
+.right {
+  float: right;
+  clear: both;
+}
+
+#send-container{
+    text-align: center;
+    max-width: 1085px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#messageInp{
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 34px;
+    font-size: 15px;
+}
+.btn{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 9%;
+    height: 38px;
+    margin: 0 5px ;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    transition: all 0.5s;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.btn:after {
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover{
+  background-color: green;
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.btn:hover:after {
+  opacity: 1;
+  right: 10px;
+}
